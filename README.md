@@ -69,7 +69,7 @@ Astrophysics • Data Science
 
 ## Featured Projects
 - [**Galaxy Cluster Mass Estimation**](https://github.com/pranauvskandhan/Astrophysics-Research/tree/main/Dynamical%20Mass%20Estimation%20of%20a%20Galaxy%20Star) – Python pipeline for dynamical mass
-- {**Hubble Constant with the Pantheon+SH0ES Supernova Sample**] (https://github.com/pranauvskandhan/Astrophysics-Research/tree/main/Hubble%20Constant) - Python pipeline for Hubble Constant
+- [**Hubble Constant with the Pantheon+SH0ES Supernova Sample**](https://github.com/pranauvskandhan/Astrophysics-Research/tree/main/Hubble%20Constant) - Python pipeline for Hubble Constant
 <!--- [**Stellar Evolution (15 M☉)**](https://github.com/pranauvskandhan/stellar-evolution) – theory + code + plots  -->
 
 ---
