@@ -2,7 +2,6 @@
 
 # Hi, I'm Pranauv
 **Physics Undergraduate @ SRM IST**  
-Astrophysics • Data Science
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/pranauv-ch?original_referer=https%3A%2F%2Fgithub.com%2F)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?logo=kaggle&logoColor=white&style=for-the-badge)](https://kaggle.com/pranauvskandhan)
