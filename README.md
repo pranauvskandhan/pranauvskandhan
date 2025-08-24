@@ -81,7 +81,3 @@ Astrophysics • Data Science
 
 ---
 
-## Currently Working On
-- Data-driven astronomy & cosmology  
-- React + REST APIs for clean full-stack apps  
-- ML for science workflows
