@@ -11,11 +11,6 @@ Astrophysics • Data Science
 
 ---
 
-## What I’m Into
-- Astrophysics: galaxy dynamics, stellar evolution, cosmology  
-- Data-driven astronomy: Python pipelines, visualization, catalog wrangling  
-- Robotics/AI
-
 ## Skill Wall
 
 ### Programming / Development
