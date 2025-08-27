@@ -69,9 +69,9 @@
 ---
 
 ## GitHub Stats
-![Pranauv's GitHub stats](https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight)
+![Pranauv's GitHub stats](https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight&cache_seconds=1800)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pranauvskandhan&layout=compact&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pranauvskandhan&layout=compact&theme=tokyonight&cache_seconds=1800)
 <!--![GitHub Streak](https://streak-stats.demolab.com?user=pranauvskandhan&theme=tokyonight) -->
 
 ---
