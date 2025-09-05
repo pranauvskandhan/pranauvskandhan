@@ -14,10 +14,13 @@
 
 ### Programming / Development
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)
+![AWS Cloud Practitioner](https://img.shields.io/badge/AWS%20Cloud%20Practitioner-232F3E?logo=amazonaws&logoColor=FF9900&style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)
+
+
 
 ---
 
@@ -55,16 +58,10 @@
 ---
 ### Certifications / Licenses
 
-![AWS Cloud Practitioner](https://img.shields.io/badge/AWS%20Cloud%20Practitioner-232F3E?logo=amazonaws&logoColor=FF9900&style=for-the-badge)
-
-- **Introduction to Data Science in Python** — University of Michigan (Issued Aug 2025)  
-  *Skills:* Data Analysis, Data Manipulation, Probability, Programming Principles, Data Import/Export, Data Cleansing, Sampling (Statistics), Data Science, Pandas, Unstructured Data  
-
-- **The Science of the Solar System** — Caltech (Issued Aug 2025)  
-  *Skills:* Chemistry, Environment, Science and Research, Water Resources, Biology, Physics, Geospatial Information and Technology, Life Sciences, Environmental Science, Scientific Methods  
-
-- **Confronting the Big Questions: Highlights of Modern Astronomy** — University of Rochester (Issued Jun 2025)  
-  *Skills:* Astrophysics  
+- AWS Certified Cloud Practitioner (2025)  
+- Introduction to Data Science in Python – Univ. of Michigan (2025)  
+- The Science of the Solar System – Caltech (2025)  
+- Confronting the Big Questions: Modern Astronomy – Univ. of Rochester (2025)  
 
 ---
 ### Robotics / Hardware
