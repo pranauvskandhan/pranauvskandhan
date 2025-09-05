@@ -53,7 +53,14 @@
 ![Differential Equations](https://img.shields.io/badge/Differential%20Equations-800000?style=for-the-badge)
 
 ---
+### Certifications / Licenses
 
+![AWS Cloud Practitioner](https://img.shields.io/badge/AWS%20Cloud%20Practitioner-232F3E?logo=amazonaws&logoColor=FF9900&style=for-the-badge)
+![University of Michigan – Data Science in Python](https://img.shields.io/badge/Data%20Science%20in%20Python-00274C?logo=universityofmichigan&logoColor=FFCB05&style=for-the-badge)
+![Caltech – Science of the Solar System](https://img.shields.io/badge/Science%20of%20the%20Solar%20System-F36C21?logo=caltech&logoColor=white&style=for-the-badge)
+![University of Rochester – Modern Astronomy](https://img.shields.io/badge/Modern%20Astronomy-FFCC00?logo=universityofrochester&logoColor=002147&style=for-the-badge)
+
+---
 ### Robotics / Hardware
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&logoColor=white&style=for-the-badge)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white&style=for-the-badge)
