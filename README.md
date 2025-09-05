@@ -56,7 +56,6 @@
 ### Certifications / Licenses
 
 ![AWS Cloud Practitioner](https://img.shields.io/badge/AWS%20Cloud%20Practitioner-232F3E?logo=amazonaws&logoColor=FF9900&style=for-the-badge)
-![AWS Cloud Practitioner](https://img.shields.io/badge/AWS%20Cloud%20Practitioner-232F3E?logo=amazonaws&logoColor=FF9900&style=for-the-badge)
 
 - **Introduction to Data Science in Python** — University of Michigan (Issued Aug 2025)  
   *Skills:* Data Analysis, Data Manipulation, Probability, Programming Principles, Data Import/Export, Data Cleansing, Sampling (Statistics), Data Science, Pandas, Unstructured Data  
