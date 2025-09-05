@@ -56,9 +56,16 @@
 ### Certifications / Licenses
 
 ![AWS Cloud Practitioner](https://img.shields.io/badge/AWS%20Cloud%20Practitioner-232F3E?logo=amazonaws&logoColor=FF9900&style=for-the-badge)
-![University of Michigan – Data Science in Python](https://img.shields.io/badge/Data%20Science%20in%20Python-00274C?logo=universityofmichigan&logoColor=FFCB05&style=for-the-badge)
-![Caltech – Science of the Solar System](https://img.shields.io/badge/Science%20of%20the%20Solar%20System-F36C21?logo=caltech&logoColor=white&style=for-the-badge)
-![University of Rochester – Modern Astronomy](https://img.shields.io/badge/Modern%20Astronomy-FFCC00?logo=universityofrochester&logoColor=002147&style=for-the-badge)
+![AWS Cloud Practitioner](https://img.shields.io/badge/AWS%20Cloud%20Practitioner-232F3E?logo=amazonaws&logoColor=FF9900&style=for-the-badge)
+
+- **Introduction to Data Science in Python** — University of Michigan (Issued Aug 2025)  
+  *Skills:* Data Analysis, Data Manipulation, Probability, Programming Principles, Data Import/Export, Data Cleansing, Sampling (Statistics), Data Science, Pandas, Unstructured Data  
+
+- **The Science of the Solar System** — Caltech (Issued Aug 2025)  
+  *Skills:* Chemistry, Environment, Science and Research, Water Resources, Biology, Physics, Geospatial Information and Technology, Life Sciences, Environmental Science, Scientific Methods  
+
+- **Confronting the Big Questions: Highlights of Modern Astronomy** — University of Rochester (Issued Jun 2025)  
+  *Skills:* Astrophysics  
 
 ---
 ### Robotics / Hardware
