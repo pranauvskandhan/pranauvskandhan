@@ -9,9 +9,6 @@
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?logo=kaggle&logoColor=white&style=for-the-badge)](https://kaggle.com/pranauvskandhan)
 
 <br>
-
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGFram9xNXdzcHZzcTh5dGxvMmdzeDhnN2N2Z3FoeGt4a3hmeXc4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r88w2d7tHqazFwNEGN/giphy.gif" width="280" alt="Goofy Animation"/>
-
 </div>
 
 ---
