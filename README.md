@@ -1,10 +1,17 @@
 <div align="center">
 
-# Hi, I'm Pranauv
+# Hi, I'm Pranauv  
 **BS Physics @ SRM · Data Science & Machine Learning**  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/pranauv-ch?original_referer=https%3A%2F%2Fgithub.com%2F)
+Exploring the universe through **Astrophysics, Data Science, and Robotics**  
+Building projects that merge **Physics + AI + Engineering**  
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/pranauv-ch)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?logo=kaggle&logoColor=white&style=for-the-badge)](https://kaggle.com/pranauvskandhan)
+
+<br>
+
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGFram9xNXdzcHZzcTh5dGxvMmdzeDhnN2N2Z3FoeGt4a3hmeXc4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r88w2d7tHqazFwNEGN/giphy.gif" width="280" alt="Goofy Animation"/>
 
 </div>
 
@@ -19,8 +26,6 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
-
-
 
 ---
 
@@ -56,14 +61,15 @@
 ![Differential Equations](https://img.shields.io/badge/Differential%20Equations-800000?style=for-the-badge)
 
 ---
-### Certifications / Licenses
 
-- AWS Certified Cloud Practitioner (2025)  
-- Introduction to Data Science in Python – Univ. of Michigan (2025)  
-- The Science of the Solar System – Caltech (2025)  
-- Confronting the Big Questions: Modern Astronomy – Univ. of Rochester (2025)  
+### Certifications / Licenses
+- [AWS Certified Cloud Practitioner (2025)](#)  
+- [Introduction to Data Science in Python – Univ. of Michigan (2025)](#)  
+- [The Science of the Solar System – Caltech (2025)](#)  
+- [Confronting the Big Questions: Modern Astronomy – Univ. of Rochester (2025)](#)  
 
 ---
+
 ### Robotics / Hardware
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&logoColor=white&style=for-the-badge)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white&style=for-the-badge)
@@ -72,9 +78,13 @@
 ---
 
 ## Featured Projects
-- [**Galaxy Cluster Mass Estimation**](https://github.com/pranauvskandhan/Astrophysics-Research/tree/main/Dynamical%20Mass%20Estimation%20of%20a%20Galaxy%20Star) – Python pipeline for dynamical mass
-- [**Hubble Constant with the Pantheon+SH0ES Supernova Sample**](https://github.com/pranauvskandhan/Astrophysics-Research/tree/main/Hubble%20Constant) - Python pipeline for Hubble Constant
-<!--- [**Stellar Evolution (15 M☉)**](https://github.com/pranauvskandhan/stellar-evolution) – theory + code + plots  -->
+- [**Galaxy Cluster Mass Estimation**](https://github.com/pranauvskandhan/Astrophysics-Research/tree/main/Dynamical%20Mass%20Estimation%20of%20a%20Galaxy%20Star)  
+  Python pipeline for dynamical mass estimation in clusters.
+
+- [**Hubble Constant with the Pantheon+SH0ES Supernova Sample**](https://github.com/pranauvskandhan/Astrophysics-Research/tree/main/Hubble%20Constant)  
+  ΛCDM cosmology analysis with Type Ia supernovae.
+
+<!-- - [**Stellar Evolution (15 M☉)**](https://github.com/pranauvskandhan/stellar-evolution) – theory + code + plots -->
 
 ---
 
@@ -82,7 +92,8 @@
 ![Pranauv's GitHub stats](https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight&cache_seconds=1800)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pranauvskandhan&layout=compact&theme=tokyonight&cache_seconds=1800)
-<!--![GitHub Streak](https://streak-stats.demolab.com?user=pranauvskandhan&theme=tokyonight) -->
+
+![GitHub Streak](https://streak-stats.demolab.com?user=pranauvskandhan&theme=tokyonight)
 
 ---
 
