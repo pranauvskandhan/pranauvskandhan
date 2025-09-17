@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGFram9xNXdzcHZzcTh5dGxvMmdzeDhnN2N2Z3FoeGt4a3hmeXc4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r88w2d7tHqazFwNEGN/giphy.gif" width="280" alt="Goofy Animation"/>
+
 # Hi, I'm Pranauv  
 **BS Physics at SRM · Data Science & Machine Learning**  
 
@@ -17,7 +19,7 @@
 ## Skill Wall
 
 ### Programming / Development
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
+![Python 3](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900?logo=amazonaws&logoColor=white&style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
