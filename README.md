@@ -1,10 +1,7 @@
 <div align="center">
 
 # Hi, I'm Pranauv  
-**BS Physics @ SRM · Data Science & Machine Learning**  
-
-Exploring the universe through **Astrophysics, Data Science, and Robotics**  
-Building projects that merge **Physics + AI + Engineering**  
+**BS Physics at SRM · Data Science & Machine Learning**  
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/pranauv-ch)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?logo=kaggle&logoColor=white&style=for-the-badge)](https://kaggle.com/pranauvskandhan)
