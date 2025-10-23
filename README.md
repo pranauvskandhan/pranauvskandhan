@@ -60,7 +60,7 @@
 
 ### Certifications / Licenses
 <!--- [AWS Certified Cloud Practitioner (2025)](#) -->
-- [Introduction to Data Science in Python – Univ. of Michigan (2025)](#)  
+- [Introduction to Data Science in Python – Univ. of Michigan (2025)](https://coursera.org/share/e83386551c79adbc9ba0fc4848919933)  
 <!--- [The Science of the Solar System – Caltech (2025)](#) -->
 <!--- [Confronting the Big Questions: Modern Astronomy – Univ. of Rochester (2025)](#)  -->
 
