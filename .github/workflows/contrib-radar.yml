@@ -1,7 +1,7 @@
 name: Contribution Radar
 on:
   schedule:
-    - cron: "30 0 * * *"   # 06:00 IST daily (cron is UTC)
+    - cron: "30 0 * * *"   # 06:00 IST (cron runs in UTC)
   workflow_dispatch:
 
 permissions:
@@ -17,19 +17,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate radar SVG
+      - name: Generate radar SVG (minimal style)
         uses: actions/github-script@v7
         with:
-          # Uses classic PAT if present, else falls back to GITHUB_TOKEN
           github-token: ${{ secrets.METRICS_TOKEN != '' && secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           script: |
             const fs = require('fs');
 
-            // ------- 1) Fetch last-12-month contribution counts -------
+            // --- 1) Fetch last-12-month counts ---
             const to = new Date();
             const from = new Date(); from.setFullYear(to.getFullYear() - 1);
-
-            const query = `
+            const q = `
             query($login:String!,$from:DateTime!,$to:DateTime!){
               user(login:$login){
                 contributionsCollection(from:$from,to:$to){
@@ -40,19 +38,17 @@ jobs:
                 }
               }
             }`;
-
-            const res = await github.graphql(query, {
+            const r = await github.graphql(q, {
               login: process.env.USERNAME,
               from: from.toISOString(),
               to: to.toISOString()
             });
-
-            const c = res?.user?.contributionsCollection || {};
+            const c = r?.user?.contributionsCollection || {};
             const counts = {
-              commits:  c.totalCommitContributions || 0,
-              prs:      c.totalPullRequestContributions || 0,
-              reviews:  c.totalPullRequestReviewContributions || 0,
-              issues:   c.totalIssueContributions || 0,
+              commits: c.totalCommitContributions || 0,
+              prs:     c.totalPullRequestContributions || 0,
+              reviews: c.totalPullRequestReviewContributions || 0,
+              issues:  c.totalIssueContributions || 0,
             };
             const total = Object.values(counts).reduce((a,b)=>a+b,0) || 1;
             const pct = {
@@ -62,70 +58,70 @@ jobs:
               issues:  100*counts.issues/total,
             };
 
-            // ------- 2) Render radar SVG (with extra top spacing) -------
-            const W = 720, H = 520;
-            const cx = W/2, cy = H/2 + 10;
-            const R  = 160;
-            const LABEL_OFFSET = 46;
-
-            // Move title higher to avoid overlap with the top label
-            const TITLE_Y = cy - R - LABEL_OFFSET - 40;  // <-- increased gap
-            const TITLE_X = cx;                          // centered title
+            // --- 2) Render "clean" radar (no grids) ---
+            const W=720,H=520,cx=W/2,cy=H/2+6;
+            const AXIS_LEN=230;        // long thin axes to ends
+            const POLY_R =140;         // polygon radius (shorter)
+            const DOT_R =6;
+            const LABEL_OFFSET=14;
 
             const axes = [
-              { name: "Code review",   val: pct.reviews, angle: -Math.PI/2 },
-              { name: "Issues",        val: pct.issues,  angle: 0 },
-              { name: "Pull requests", val: pct.prs,     angle:  Math.PI/2 },
-              { name: "Commits",       val: pct.commits, angle:  Math.PI },
+              { name:"Code review", val:pct.reviews, angle:-Math.PI/2, align:"middle" }, // top
+              { name:"Issues",      val:pct.issues,  angle:0,          align:"start"  }, // right
+              { name:"Pull requests",val:pct.prs,    angle: Math.PI/2, align:"middle" }, // bottom
+              { name:"Commits",     val:pct.commits, angle: Math.PI,   align:"end"    }, // left
             ];
 
-            const toPoint = (r, a) => [cx + r*Math.cos(a), cy + r*Math.sin(a)];
+            const toPoint=(r,a)=>[cx+r*Math.cos(a), cy+r*Math.sin(a)];
+            const axisEnd = a => toPoint(AXIS_LEN, a);
+            const polyPts = axes.map(a=>toPoint(POLY_R*(a.val/100), a.angle));
 
-            const pts = axes.map(a => toPoint(R*(a.val/100), a.angle));
-            const poly = pts.map(p => p.join(',')).join(' ');
+            const polyStr = polyPts.map(p=>p.join(',')).join(' ');
+            const dotEls = polyPts.map(([x,y]) => `<circle class="dot" cx="${x}" cy="${y}" r="${DOT_R}"/>`).join('');
 
-            const guide = g => {
-              const r = R*g;
-              const p = [toPoint(r,-Math.PI/2), toPoint(r,0), toPoint(r,Math.PI/2), toPoint(r,Math.PI)];
-              return `<polygon class="guide" points="${p.map(q=>q.join(',')).join(' ')}"/>`;
-            };
+            // Labels at axis ends: % on the first line, label on the second
+            const labelEls = axes.map(a=>{
+              const [lx,ly]=toPoint(AXIS_LEN+LABEL_OFFSET, a.angle);
+              const p = Math.round(a.val);
+              const ta = a.align === "start" ? "start" : a.align === "end" ? "end" : "middle";
+              return `
+              <text class="pct" x="${lx}" y="${ly-6}" text-anchor="${ta}">${p}%</text>
+              <text class="label" x="${lx}" y="${ly+14}" text-anchor="${ta}">${a.name}</text>`;
+            }).join('');
+
+            // Crosshair at center (subtle)
+            const cross = `
+              <line class="axis" x1="${cx-1}" y1="${cy-AXIS_LEN}" x2="${cx-1}" y2="${cy+AXIS_LEN}"/>
+              <line class="axis" x1="${cx-AXIS_LEN}" y1="${cy-1}" x2="${cx+AXIS_LEN}" y2="${cy-1}"/>
+            `;
+
+            const axisEls = axes.map(a=>{
+              const [x,y]=axisEnd(a.angle);
+              return `<line class="axis" x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"/>`;
+            }).join('');
 
             const svg = `
             <svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contribution types radar">
               <style>
                 .bg{fill:#0b1220}
-                .axis{stroke:#2e3a55;stroke-width:2}
-                .guide{stroke:#1f2a44;stroke-width:1;fill:none}
+                .axis{stroke:#6BFF8A;stroke-width:4;stroke-linecap:round;opacity:.9}
                 .poly{fill:rgba(90,255,120,.25);stroke:#6BFF8A;stroke-width:3}
                 .dot{fill:#6BFF8A;stroke:#0b1220;stroke-width:2}
-                .label{fill:#b8c7e0;font:18px ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;text-anchor:middle}
-                .small{font-size:16px}
-                .title{fill:#dfe7f6;font:20px ui-sans-serif;font-weight:600} /* slightly smaller title */
+                .pct{fill:#BFD8BF;font:18px ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+                .label{fill:#C7CED9;font:18px ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
               </style>
-
               <rect class="bg" x="0" y="0" width="${W}" height="${H}" rx="16"/>
-
-              ${axes.map(a=>{const [x,y]=toPoint(R,a.angle);return `<line class="axis" x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"/>`}).join('')}
-              ${[0.25,0.5,0.75,1].map(guide).join('')}
-
-              <polygon class="poly" points="${poly}"/>
-              ${pts.map(([x,y])=>`<circle class="dot" cx="${x}" cy="${y}" r="6"/>`).join('')}
-
-              ${axes.map(a=>{
-                const [lx,ly]=toPoint(R+LABEL_OFFSET,a.angle);
-                const p=Math.round(a.val);
-                return `<text class="label" x="${lx}" y="${ly-6}">${p}%</text>
-                        <text class="label small" x="${lx}" y="${ly+16}">${a.name}</text>`;
-              }).join('')}
-
-              <text class="title" x="${TITLE_X}" y="${TITLE_Y}" text-anchor="middle">Contribution types (last 12 months)</text>
+              ${axisEls}
+              ${cross}
+              <polygon class="poly" points="${polyStr}"/>
+              ${dotEls}
+              ${labelEls}
             </svg>`.trim();
 
-            require('fs').writeFileSync('contrib-radar.svg', svg);
-            core.info('SVG written: contrib-radar.svg');
+            fs.writeFileSync('contrib-radar.svg', svg);
 
       - name: Commit SVG
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update contribution radar"
+          commit_message: "chore: update contribution radar (clean style)"
           file_pattern: contrib-radar.svg
