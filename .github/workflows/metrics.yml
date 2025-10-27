@@ -1,0 +1,31 @@
+name: GitHub Metrics
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # runs twice a day
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: pranauvskandhan
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+
+          # Focus on contribution types (commits / PRs / issues / reviews)
+          plugin_activity: yes
+          plugin_activity_limit: 7
+          plugin_followup: yes
+          plugin_followup_sections: user, repositories
+
+          # (Optional extras)
+          plugin_languages: yes
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_lines: yes
