@@ -1,7 +1,7 @@
 <div align="center">
 
 # Hi, I'm Pranauv  
-**BS Physics at SRM · BS Data Science & Applications at IITM**  
+**BS Physics at SRM · BS Data Science & Applications at IITM**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/pranauv-ch)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?logo=kaggle&logoColor=white&style=for-the-badge)](https://kaggle.com/pranauvskandhan)
@@ -9,23 +9,23 @@
 <br>
 
 <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGFram9xNXdzcHZzcTh5dGxvMmdzeDhnN2N2Z3FoeGt4a3hmeXc4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r88w2d7tHqazFwNEGN/giphy.gif" width="280" alt="Goofy Animation"/>
+
 </div>
 
 ---
 
-## Skill Wall
+##  Skill Wall
 
 ### Programming / Development
 ![Python 3](https://img.shields.io/badge/Python%203-3776AB?logo=python&logoColor=white&style=for-the-badge)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)
-<!--![AWS](https://img.shields.io/badge/AWS-%23FF9900?logo=amazonaws&logoColor=white&style=for-the-badge) -->
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
 
 ---
 
-### Data Science / ML
+### Data Science / Machine Learning
 ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge)
 ![Pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white&style=for-the-badge)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white&style=for-the-badge)
@@ -59,10 +59,7 @@
 ---
 
 ### Certifications / Licenses
-<!--- [AWS Certified Cloud Practitioner (2025)](#) -->
-- [Introduction to Data Science in Python – Univ. of Michigan (2025)](https://coursera.org/share/e83386551c79adbc9ba0fc4848919933)  
-<!--- [The Science of the Solar System – Caltech (2025)](#) -->
-<!--- [Confronting the Big Questions: Modern Astronomy – Univ. of Rochester (2025)](#)  -->
+- [Introduction to Data Science in Python – Univ. of Michigan (2025)](https://coursera.org/share/e83386551c79adbc9ba0fc4848919933)
 
 ---
 
@@ -83,13 +80,13 @@
 ---
 
 ## GitHub Stats
-<!--![Metrics](https://raw.githubusercontent.com/pranauvskandhan/pranauvskandhan/main/github-metrics.svg) -->
 
+<div align="center">
 
-! [] (https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&cache_seconds=7200)
 
 ![Contribution Radar](https://raw.githubusercontent.com/pranauvskandhan/pranauvskandhan/main/contrib-radar.svg)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pranauvskandhan&layout=compact&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pranauvskandhan&layout=compact&theme=tokyonight&cache_seconds=7200)
 
----
+</div>
