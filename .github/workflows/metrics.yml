@@ -3,12 +3,13 @@ name: GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 */12 * * *"        # twice a day
+    - cron: "0 */12 * * *"   # run twice a day
   workflow_dispatch:
 
-# allow the action to commit the SVG to your repo
+# give GitHub Actions permission to write files
 permissions:
   contents: write
+  actions: read
 
 jobs:
   build:
@@ -16,40 +17,33 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      # (optional) checkout not strictly required, but keeps commits cleaner
       - uses: actions/checkout@v4
 
-      - name: Generate profile metrics (no-Docker, prebuilt)
+      - name: Generate profile metrics (no-Docker)
         uses: lowlighter/metrics@latest
         with:
-          # --- Runtime: force NO DOCKER ---
-          use_prebuilt: yes          # <- avoids docker/jq requirement
+          use_prebuilt: yes
+          filename: github-metrics.svg
 
-          # --- Tokens ---
-          token: ${{ secrets.METRICS_TOKEN }}         # CLASSIC PAT: public_repo, read:user (+ read:org if needed)
-          committer_token: ${{ secrets.GITHUB_TOKEN }} # to commit svg
+          # your personal classic PAT for reading stats
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # built-in token for committing svg
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           committer_branch: main
           committer_message: "chore: update github-metrics.svg"
 
-          # --- Output ---
-          filename: github-metrics.svg
-
-          # --- Profile ---
           user: pranauvskandhan
           template: classic
           config_timezone: Asia/Kolkata
 
-          # --- Base sections (safe) ---
           base: header, activity, repositories, metadata
 
-          # --- Focus on contribution types ---
           plugin_activity: yes
-          plugin_activity_days: 14
           plugin_activity_limit: 7
           plugin_followup: yes
           plugin_followup_sections: user, repositories
 
-          # --- Extras kept conservative to avoid NaN issues ---
           plugin_languages: yes
           plugin_languages_details: percentage
           plugin_languages_limit: 8
@@ -57,7 +51,5 @@ jobs:
           plugin_habits: yes
           plugin_habits_charts: yes
 
-          # Be resilient if a plugin returns empty data
-          plugins_errors_fatal: no
           retries: 2
           retries_delay: 20
