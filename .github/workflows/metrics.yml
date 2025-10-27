@@ -1,39 +1,57 @@
+# .github/workflows/metrics.yml
 name: GitHub Metrics
+
 on:
   schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
+    - cron: "0 */12 * * *"      # update twice a day
+  workflow_dispatch:            # let you run it manually from Actions tab
 
 permissions:
-  contents: write   
-  
+  contents: write               # allow committing the generated SVG
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
-      - name: Generate metrics
+      - name: Generate profile metrics
         uses: lowlighter/metrics@latest
         with:
-
+          # Output file (will be committed to your repo root)
           filename: github-metrics.svg
 
+          # CLASSIC PAT for GraphQL reads (must be classic, not fine-grained)
           token: ${{ secrets.METRICS_TOKEN }}
 
+          # Use the workflow token to commit the SVG back to main
           committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: main
+          committer_message: "chore: update github-metrics.svg"
 
+          # Profile
           user: pranauvskandhan
           template: classic
-          base: header, activity, community, repositories, metadata
           config_timezone: Asia/Kolkata
 
-         
+          # Base sections (lean + reliable)
+          base: header, activity, repositories, metadata
+
+          # --- Activity focus (commits / PRs / reviews / issues) ---
           plugin_activity: yes
           plugin_activity_limit: 7
+          plugin_activity_days: 14
           plugin_followup: yes
           plugin_followup_sections: user, repositories
 
-          
+          # --- Extras (safe/common) ---
           plugin_languages: yes
           plugin_languages_details: percentage
           plugin_languages_limit: 8
           plugin_lines: yes
+          plugin_habits: yes
+          plugin_habits_charts: yes
+
+          # Keep runtime stable
+          retries: 2
+          retries_delay: 20
