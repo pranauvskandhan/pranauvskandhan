@@ -74,31 +74,8 @@
 
 ## GitHub Stats
 
-<!-- Larger, balanced three-panel layout -->
-<div align="center" style="margin-top: 10px;">
-
-  <!-- First row: main stats + radar + languages -->
-  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
-
-    <img 
-      src="https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&cache_seconds=7200" 
-      alt="GitHub Stats" 
-      height="200" 
-      style="border-radius: 10px;"/>
-
-    <img 
-      src="https://raw.githubusercontent.com/pranauvskandhan/pranauvskandhan/main/contrib-radar.svg?v=3" 
-      alt="Contribution Radar" 
-      height="200" 
-      style="border-radius: 10px;"/>
-
-    <img 
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranauvskandhan&layout=compact&theme=tokyonight&cache_seconds=7200" 
-      alt="Top Languages" 
-      height="200" 
-      style="border-radius: 10px;"/>
-  </div>
-
-</div>
-
-
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&cache_seconds=7200" alt="GitHub Stats" height="220">
+  <img src="https://raw.githubusercontent.com/pranauvskandhan/pranauvskandhan/main/contrib-radar.svg?v=4" alt="Contribution Radar" height="220">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranauvskandhan&layout=compact&theme=tokyonight&cache_seconds=7200" alt="Top Languages" height="220">
+</p>
