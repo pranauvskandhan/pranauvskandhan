@@ -86,7 +86,7 @@
 <!--![Metrics](https://raw.githubusercontent.com/pranauvskandhan/pranauvskandhan/main/github-metrics.svg) -->
 
 
-![Pranauv's GitHub stats](https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true)
+(https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true)
 
 ![Contribution Radar](https://raw.githubusercontent.com/pranauvskandhan/pranauvskandhan/main/contrib-radar.svg)
 
