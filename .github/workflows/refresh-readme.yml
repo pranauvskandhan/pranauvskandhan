@@ -1,0 +1,26 @@
+name: Auto-Refresh GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"    # every 6 hours (runs 4 times/day)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Bump cache-buster numbers in README
+        run: |
+          TS=$(date +%s)
+          perl -0777 -pe "s|(https://github-readme-stats\.vercel\.app/api[^\"\\)]*?)&?v=\d+|\$1|g; s|(https://github-readme-stats\.vercel\.app/api[^\"\\)]*)|\$1\&v=$TS|g" -i README.md
+          perl -0777 -pe "s|(https://github-readme-stats\.vercel\.app/api/top-langs[^\"\\)]*?)&?v=\d+|\$1|g; s|(https://github-readme-stats\.vercel\.app/api/top-langs[^\"\\)]*)|\$1\&v=$TS|g" -i README.md
+          perl -0777 -pe "s|(contrib-radar\.svg)(\?v=\d+)?|\$1?v=$TS|g" -i README.md
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-refresh README stats"
