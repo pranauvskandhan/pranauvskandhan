@@ -3,11 +3,12 @@ name: GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 */12 * * *"      # update twice a day
-  workflow_dispatch:            # let you run it manually from Actions tab
+    - cron: "0 */12 * * *"        # twice a day
+  workflow_dispatch:
 
+# allow the action to commit the SVG to your repo
 permissions:
-  contents: write               # allow committing the generated SVG
+  contents: write
 
 jobs:
   build:
@@ -15,36 +16,40 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Generate profile metrics
+      # (optional) checkout not strictly required, but keeps commits cleaner
+      - uses: actions/checkout@v4
+
+      - name: Generate profile metrics (no-Docker, prebuilt)
         uses: lowlighter/metrics@latest
         with:
-          # Output file (will be committed to your repo root)
-          filename: github-metrics.svg
+          # --- Runtime: force NO DOCKER ---
+          use_prebuilt: yes          # <- avoids docker/jq requirement
 
-          # CLASSIC PAT for GraphQL reads (must be classic, not fine-grained)
-          token: ${{ secrets.METRICS_TOKEN }}
-
-          # Use the workflow token to commit the SVG back to main
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          # --- Tokens ---
+          token: ${{ secrets.METRICS_TOKEN }}         # CLASSIC PAT: public_repo, read:user (+ read:org if needed)
+          committer_token: ${{ secrets.GITHUB_TOKEN }} # to commit svg
           committer_branch: main
           committer_message: "chore: update github-metrics.svg"
 
-          # Profile
+          # --- Output ---
+          filename: github-metrics.svg
+
+          # --- Profile ---
           user: pranauvskandhan
           template: classic
           config_timezone: Asia/Kolkata
 
-          # Base sections (lean + reliable)
+          # --- Base sections (safe) ---
           base: header, activity, repositories, metadata
 
-          # --- Activity focus (commits / PRs / reviews / issues) ---
+          # --- Focus on contribution types ---
           plugin_activity: yes
-          plugin_activity_limit: 7
           plugin_activity_days: 14
+          plugin_activity_limit: 7
           plugin_followup: yes
           plugin_followup_sections: user, repositories
 
-          # --- Extras (safe/common) ---
+          # --- Extras kept conservative to avoid NaN issues ---
           plugin_languages: yes
           plugin_languages_details: percentage
           plugin_languages_limit: 8
@@ -52,6 +57,7 @@ jobs:
           plugin_habits: yes
           plugin_habits_charts: yes
 
-          # Keep runtime stable
+          # Be resilient if a plugin returns empty data
+          plugins_errors_fatal: no
           retries: 2
           retries_delay: 20
