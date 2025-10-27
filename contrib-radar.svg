@@ -1,28 +1,27 @@
 <svg width="720" height="520" viewBox="0 0 720 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contribution types radar">
   <style>
     .bg{fill:#0b1220}
-    .axis{stroke:#2e3a55;stroke-width:2}
-    .guide{stroke:#1f2a44;stroke-width:1;fill:none}
+    .axis{stroke:#6BFF8A;stroke-width:4;stroke-linecap:round;opacity:.9}
     .poly{fill:rgba(90,255,120,.25);stroke:#6BFF8A;stroke-width:3}
     .dot{fill:#6BFF8A;stroke:#0b1220;stroke-width:2}
-    .label{fill:#b8c7e0;font:18px ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;text-anchor:middle}
-    .small{font-size:16px}
-    .title{fill:#dfe7f6;font:20px ui-sans-serif;font-weight:600} /* slightly smaller title */
+    .pct{fill:#BFD8BF;font:18px ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+    .label{fill:#C7CED9;font:18px ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
   </style>
-
   <rect class="bg" x="0" y="0" width="720" height="520" rx="16"/>
+  <line class="axis" x1="360" y1="266" x2="360" y2="36"/><line class="axis" x1="360" y1="266" x2="590" y2="266"/><line class="axis" x1="360" y1="266" x2="360" y2="496"/><line class="axis" x1="360" y1="266" x2="130" y2="266"/>
+  
+  <line class="axis" x1="359" y1="36" x2="359" y2="496"/>
+  <line class="axis" x1="130" y1="265" x2="590" y2="265"/>
 
-  <line class="axis" x1="360" y1="270" x2="360" y2="110"/><line class="axis" x1="360" y1="270" x2="520" y2="270"/><line class="axis" x1="360" y1="270" x2="360" y2="430"/><line class="axis" x1="360" y1="270" x2="200" y2="270"/>
-  <polygon class="guide" points="360,230 400,270 360,310 320,270"/><polygon class="guide" points="360,190 440,270 360,350 280,270"/><polygon class="guide" points="360,150 480,270 360,390 240,270"/><polygon class="guide" points="360,110 520,270 360,430 200,270"/>
-
-  <polygon class="poly" points="360,270 360,270 360,270 200,270"/>
-  <circle class="dot" cx="360" cy="270" r="6"/><circle class="dot" cx="360" cy="270" r="6"/><circle class="dot" cx="360" cy="270" r="6"/><circle class="dot" cx="200" cy="270" r="6"/>
-
-  <text class="label" x="360" y="58">0%</text>
-            <text class="label small" x="360" y="80">Code review</text><text class="label" x="566" y="264">0%</text>
-            <text class="label small" x="566" y="286">Issues</text><text class="label" x="360" y="470">0%</text>
-            <text class="label small" x="360" y="492">Pull requests</text><text class="label" x="154" y="264">100%</text>
-            <text class="label small" x="154" y="286">Commits</text>
-
-  <text class="title" x="360" y="24" text-anchor="middle">Contribution types (last 12 months)</text>
+  <polygon class="poly" points="360,266 360,266 360,266 220,266"/>
+  <circle class="dot" cx="360" cy="266" r="6"/><circle class="dot" cx="360" cy="266" r="6"/><circle class="dot" cx="360" cy="266" r="6"/><circle class="dot" cx="220" cy="266" r="6"/>
+  
+  <text class="pct" x="360" y="16" text-anchor="middle">0%</text>
+  <text class="label" x="360" y="36" text-anchor="middle">Code review</text>
+  <text class="pct" x="604" y="260" text-anchor="start">0%</text>
+  <text class="label" x="604" y="280" text-anchor="start">Issues</text>
+  <text class="pct" x="360" y="504" text-anchor="middle">0%</text>
+  <text class="label" x="360" y="524" text-anchor="middle">Pull requests</text>
+  <text class="pct" x="116" y="260.00000000000006" text-anchor="end">100%</text>
+  <text class="label" x="116" y="280.00000000000006" text-anchor="end">Commits</text>
 </svg>
