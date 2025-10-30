@@ -1,8 +1,7 @@
-name: Auto-Refresh GitHub Stats
-
+name: Auto-Refresh README Cards
 on:
   schedule:
-    - cron: "0 */6 * * *"    # every 6 hours (runs 4 times/day)
+    - cron: "0 */6 * * *"   # every 6 hours (UTC)
   workflow_dispatch:
 
 permissions:
@@ -14,13 +13,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Bump cache-buster numbers in README
+      - name: Bump cache-busters in README
+        shell: bash
         run: |
           TS=$(date +%s)
+
+          # 1) GitHub Stats card
           perl -0777 -pe "s|(https://github-readme-stats\.vercel\.app/api[^\"\\)]*?)&?v=\d+|\$1|g; s|(https://github-readme-stats\.vercel\.app/api[^\"\\)]*)|\$1\&v=$TS|g" -i README.md
+
+          # 2) Top Languages card
           perl -0777 -pe "s|(https://github-readme-stats\.vercel\.app/api/top-langs[^\"\\)]*?)&?v=\d+|\$1|g; s|(https://github-readme-stats\.vercel\.app/api/top-langs[^\"\\)]*)|\$1\&v=$TS|g" -i README.md
+
+          # 3) Your local radar svg (optional)
           perl -0777 -pe "s|(contrib-radar\.svg)(\?v=\d+)?|\$1?v=$TS|g" -i README.md
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: auto-refresh README stats"
+          commit_message: "chore: auto-refresh README cards"
