@@ -66,9 +66,9 @@
 
 ---
 
-## Featured Projects
+<!--## Featured Projects
 - [**Galaxy Cluster Mass Estimation**](https://github.com/pranauvskandhan/Astrophysics-Research/tree/main/Dynamical%20Mass%20Estimation%20of%20a%20Galaxy%20Star) – Python pipeline for dynamical mass estimation in clusters.  
-- [**Hubble Constant with the Pantheon+SH0ES Supernova Sample**](https://github.com/pranauvskandhan/Astrophysics-Research/tree/main/Hubble%20Constant) – ΛCDM cosmology analysis with Type Ia supernovae.
+- [**Hubble Constant with the Pantheon+SH0ES Supernova Sample**](https://github.com/pranauvskandhan/Astrophysics-Research/tree/main/Hubble%20Constant) – ΛCDM cosmology analysis with Type Ia supernovae.-->
 
 ---
 
