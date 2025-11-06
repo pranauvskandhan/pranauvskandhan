@@ -56,8 +56,8 @@
 ![Linear Algebra](https://img.shields.io/badge/Linear%20Algebra-191970?style=for-the-badge)
 ![Differential Equations](https://img.shields.io/badge/Differential%20Equations-800000?style=for-the-badge)
 
-### Certifications / Licenses
-- [Introduction to Data Science in Python – Univ. of Michigan (2025)](https://coursera.org/share/e83386551c79adbc9ba0fc4848919933)
+<!--### Certifications / Licenses
+- [Introduction to Data Science in Python – Univ. of Michigan (2025)](https://coursera.org/share/e83386551c79adbc9ba0fc4848919933)-->
 
 ### Robotics / Hardware
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&logoColor=white&style=for-the-badge)
