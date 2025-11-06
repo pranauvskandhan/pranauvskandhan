@@ -41,8 +41,9 @@
 ### Physics / Scientific Computing
 ![GNU Octave](https://img.shields.io/badge/GNU%20Octave-0790C0?logo=octave&logoColor=white&style=for-the-badge)
 ![MATLAB](https://img.shields.io/badge/MATLAB-E95420?logo=mathworks&logoColor=white&style=for-the-badge)
-<!--![VPython](https://img.shields.io/badge/VPython-FF6600?style=for-the-badge&logo=python&logoColor=white)-->
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?logo=latex&logoColor=white&style=for-the-badge)
+<!--![VPython](https://img.shields.io/badge/VPython-FF6600?style=for-the-badge&logo=python&logoColor=white)-->
+
 
 ### Core Physics & Math
 ![Kinematics](https://img.shields.io/badge/Kinematics-2E8B57?style=for-the-badge)
