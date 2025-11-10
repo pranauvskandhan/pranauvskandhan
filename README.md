@@ -16,7 +16,7 @@
 <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGFram9xNXdzcHZzcTh5dGxvMmdzeDhnN2N2Z3FoeGt4a3hmeXc4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/r88w2d7tHqazFwNEGN/giphy.gif"
      width="220" alt="Goofy Animation"/>
 
-</div>
+<!--</div>
 
 ---
 
@@ -45,6 +45,7 @@
 <!--![VPython](https://img.shields.io/badge/VPython-FF6600?style=for-the-badge&logo=python&logoColor=white)-->
 
 
+<!--
 ### Core Physics & Math
 ![Kinematics](https://img.shields.io/badge/Kinematics-2E8B57?style=for-the-badge)
 ![Waves](https://img.shields.io/badge/Waves-1CA9C9?style=for-the-badge)
@@ -60,6 +61,7 @@
 <!--### Certifications / Licenses
 - [Introduction to Data Science in Python – Univ. of Michigan (2025)](https://coursera.org/share/e83386551c79adbc9ba0fc4848919933)-->
 
+<!--
 ### Robotics / Hardware
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?logo=raspberrypi&logoColor=white&style=for-the-badge)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white&style=for-the-badge)
