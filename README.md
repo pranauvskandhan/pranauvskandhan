@@ -78,8 +78,8 @@
 <!--## GitHub Stats -->
 
 <!--<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight&cache_seconds=1800&v=1762909195"
+<img src="https://github-readme-stats.vercel.app/api?username=pranauvskandhan&show_icons=true&theme=tokyonight&cache_seconds=1800&v=1762928398"
      alt="GitHub Stats" height="220">
-<!--<img src="https://raw.githubusercontent.com/pranauvskandhan/pranauvskandhan/main/contrib-radar.svg?v=1762909195" alt="Contribution Radar" height="280"> -->
- <!--<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranauvskandhan&layout=compact&theme=tokyonight&cache_seconds=1800&v=1762909195" alt="Top Languages" height="220">
+<!--<img src="https://raw.githubusercontent.com/pranauvskandhan/pranauvskandhan/main/contrib-radar.svg?v=1762928398" alt="Contribution Radar" height="280"> -->
+ <!--<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranauvskandhan&layout=compact&theme=tokyonight&cache_seconds=1800&v=1762928398" alt="Top Languages" height="220">
 </p> -->
