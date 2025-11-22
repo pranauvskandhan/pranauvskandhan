@@ -2,7 +2,7 @@
 <div align="center">
 
 # Hi, I'm Pranauv
-**BS Physics at SRM**
+<!--**BS Physics at SRM**-->
 
 <a href="https://www.linkedin.com/in/pranauv-ch">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge" alt="LinkedIn"/>
