@@ -42,6 +42,7 @@
 
 ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+![IBM Cognos Analytics](https://img.shields.io/badge/IBM%20Cognos%20Analytics-052FAD?style=for-the-badge&logo=ibm&logoColor=white)
 
 </details>
 
